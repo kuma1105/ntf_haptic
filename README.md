@@ -14,3 +14,11 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Youtube
+
+[How to Implement Vibration in flutter using HapticFeedback & flutter Vibration library](https://youtu.be/aE8I66qr9Qw)
+
+## Flutter Package
+
+1. [vibration](https://pub.dev/packages/vibration)
