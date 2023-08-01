@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:vibration/vibration.dart';
 
 
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'No Touch Fitness Haptic'),
     );
   }
 }
@@ -33,14 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,30 +47,32 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 200,
               height: 100,
               child: ElevatedButton(onPressed: () {
-                Vibration.vibrate(duration: 1000, amplitude: 80);
-              }, child: Text("duration: 1000, amplitude: 80")),
+                Vibration.vibrate(duration: 1000, amplitude: 50);
+              }, child: Text("duration: 1000, amplitude: 50")),
             ),
             Container(
               width: 200,
               height: 100,
               child: ElevatedButton(onPressed: () {
-                Vibration.vibrate(duration: 1000, amplitude: 160);
-              }, child: Text("duration: 1000, amplitude: 160")),
+                Vibration.vibrate(duration: 1000, amplitude: 100);
+              }, child: Text("duration: 1000, amplitude: 100")),
             ),
             Container(
               width: 200,
               height: 100,
               child: ElevatedButton(onPressed: () {
-                Vibration.vibrate(duration: 1000, amplitude: 250);
-              }, child: Text("duration: 1000, amplitude: 250")),
+                Vibration.vibrate(duration: 1000, amplitude: 150);
+              }, child: Text("duration: 1000, amplitude: 150")),
+            ),
+            Container(
+              width: 200,
+              height: 100,
+              child: ElevatedButton(onPressed: () {
+                Vibration.vibrate(duration: 1000, amplitude: 200);
+              }, child: Text("duration: 1000, amplitude: 200")),
             )
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
